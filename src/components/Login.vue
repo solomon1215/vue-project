@@ -55,7 +55,7 @@
                             return this.$message.error('帐号或密码错误')
                         }
                         this.$message.success('登录成功');
-                        window.sessionStorage.setItem('token', res.code);
+                        window.sessionStorage.setItem('token', res.token);
                         this.$router.push('/home')
 
                     } else {
